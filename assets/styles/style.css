@@ -19,9 +19,22 @@ body {
 
 #dot-img-button {
   background-color: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-style: none;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  left: 0px;
+  top: 50px;
 }
 
 .aside-icon-container {
@@ -48,8 +61,8 @@ body {
 }
 
 .aside-icon-container .dots-icon, .aside-icon-container .dots-icon-hover {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   border-radius: 50%;
   left: 0px;
@@ -63,8 +76,8 @@ body {
 }
 
 .aside-icon-container .checkedlabel .aside-icon-default, .aside-icon-container .checkedlabel .aside-icon-hover {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   border-radius: 50%;
   left: 0px;
@@ -87,13 +100,13 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  left: -30px;
-  top: -30px;
+  left: -35px;
+  top: -35px;
 }
 
 .aside-icon-container .checkedlabel .aside-icon-cheked {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   left: 5px;
   top: 5px;
@@ -113,8 +126,8 @@ body {
 
 .checkboxhider:checked ~ .checkedlabel > .aside-icon-cheked {
   opacity: 1;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   left: 0px;
   top: 0px;
 }
@@ -124,8 +137,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   opacity: .6;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -137,7 +150,7 @@ body {
   display: flex;
 }
 
-#unicor, #heart, #save, #dots {
+#unicorn, #heart, #save, #dots {
   border-style: solid;
   border-width: 2px;
 }
@@ -182,9 +195,6 @@ body {
 }
 
 .pop-menu-container .menu-list {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   list-style: none;
 }
 
