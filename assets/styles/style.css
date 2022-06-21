@@ -1,5 +1,13 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
 body {
   background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .aside-icon-bar {
@@ -15,6 +23,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-left: 30px;
+  margin-top: 3rem;
 }
 
 #dot-img-button {
@@ -37,8 +46,8 @@ body {
   top: 40px;
 }
 
-.aside-container {
-  width: 15vw;
+.left-aside {
+  width: 25vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +59,7 @@ body {
   position: sticky;
   top: 0;
   background-color: #F5F5F5;
+  z-index: 1;
 }
 
 .aside-icon-container {
@@ -62,8 +72,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   position: relative;
 }
 
@@ -97,7 +107,7 @@ body {
   border-radius: 50%;
   left: 0px;
   top: 0px;
-  opacity: .85;
+  opacity: 1;
 }
 
 .aside-icon-container .checkedlabel .aside-icon-hover {
@@ -118,6 +128,22 @@ body {
       align-self: center;
   left: -35px;
   top: -35px;
+}
+
+.aside-icon-container .checkedlabel .smallring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  opacity: 1;
+  width: 0px;
+  height: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -ms-flex-item-align: center;
+      align-self: center;
+  left: 25px;
+  top: 25px;
 }
 
 .aside-icon-container .checkedlabel .aside-icon-cheked {
@@ -160,6 +186,15 @@ body {
   top: 0px;
 }
 
+.checkboxhider:checked ~ .checkedlabel > .smallring {
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+}
+
 .checkboxhider:checked ~ .checkedlabel > .pop-menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,10 +220,6 @@ body {
 
 #dots {
   border-color: black;
-}
-
-.smallring {
-  display: none;
 }
 
 .dropdown-item, .dropdown-item-header {
@@ -244,5 +275,256 @@ body {
 
 #list-menu-icon-hover {
   opacity: 0;
+}
+
+#main-container {
+  width: 50vw;
+}
+
+.card-top {
+  background-color: white;
+  border-color: #3735365b;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.card-top #button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card-top #follow-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  height: 2.5rem;
+}
+
+.card-top .profile-description {
+  margin: 1rem;
+}
+
+.card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 3%;
+  border-color: #3735365b;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.card-bottom header {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+}
+
+#card-top-list {
+  padding: 1rem;
+}
+
+#card-top-list li {
+  list-style: none;
+}
+
+#blue-header {
+  background-color: blue;
+  height: 4rem;
+}
+
+#right-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  height: 100%;
+}
+
+#bottom-card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  margin: 1rem;
+  border-top-color: lightgray;
+  color: #717171;
+  border-width: 1px;
+  border-top-style: solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/*   -----------------Aqui el SCSS de GIO------------*/
+.post-detail .card .card.mb-nutria {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.post-detail .card .card-text {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-detail .card .image-title .image-dev {
+  border-radius: 50%;
+  padding-left: 150px;
+}
+
+.post-detail .card .profile-name {
+  margin-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-detail .card .card-body {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-detail .card .card-title {
+  max-width: 750px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.post-detail .card .card-happy {
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-aside {
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90vh;
+  }
+  #right-aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    height: 100%;
+  }
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aside-icon-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10.1vh;
+    margin-top: 15px;
+  }
+  .counter {
+    left: 40px;
+    top: 10px;
+  }
+  .aside-icon-container {
+    height: 100%;
+  }
+  .pop-menu-container {
+    left: -300%;
+    top: -22rem;
+  }
+  .perrito {
+    width: 60vw;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-container {
+    width: 50vw;
+  }
+  .card-bottom, .card-top {
+    margin: .5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

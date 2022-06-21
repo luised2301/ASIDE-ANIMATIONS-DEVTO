@@ -17,11 +17,12 @@
   </header>
   <body>
 
-    <aside class="aside-container">
+    <aside class="left-aside">
       <div class="aside-icon-bar">
         <div class="aside-icon-container">
           <input type="checkbox" id="aside-icon-checkboxheart" class="checkboxhider">
           <label for="aside-icon-checkboxheart" class="checkedlabel" id="checkboxheaartlabel">
+            <img src="./assets/images/SVG/heartring1.png" alt="" class="smallring">
             <img src="./assets/images/SVG/heart.png" alt="" class="aside-icon-default">
             <img src="./assets/images/SVG/hearthover.png" alt="" class="aside-icon-hover">
             <img src="./assets/images/SVG/heartring1.png" alt="" class="bigring">
@@ -34,9 +35,10 @@
         <div class="aside-icon-container">
           <input type="checkbox" id="aside-icon-checkboxunicorn" class="checkboxhider">
           <label for="aside-icon-checkboxunicorn" class="checkedlabel">
+            <img src="./assets/images/SVG/ringunicorn.png" alt="" class="smallring">
             <img src="./assets/images/SVG/unicorn.png" alt="" class="aside-icon-default">
             <img src="./assets/images/SVG/unicornhover.png" alt="" class="aside-icon-hover">
-            <img src="./assets/images/SVG/ringunicorn.png" alt="" class="bigring">
+            <img src="./assets/images/SVG/ringunicorn.png" alt="" class="bigring">            
             <img src="./assets/images/SVG/unicorncheked.png" alt="" class="aside-icon-cheked" id="unicorn">
           </label>
         <div class="counter">
@@ -46,6 +48,7 @@
         <div class="aside-icon-container">
           <input type="checkbox" id="aside-icon-checkboxsave" class="checkboxhider">
           <label for="aside-icon-checkboxsave" class="checkedlabel">
+            <img src="./assets/images/SVG/savering1.png" alt="" class="smallring">
             <img src="./assets/images/SVG/save.png" alt="" class="aside-icon-default">
             <img src="./assets/images/SVG/savehover.png" alt="" class="aside-icon-hover">
             <img src="./assets/images/SVG/savering1.png" alt="" class="bigring">
@@ -79,26 +82,134 @@
           </div>
       </div>
     </aside>
-    <main>
-      <div class="container">
-        <div class="row">
-          <div>
-            <img src="	https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2021/06/09/2592367.jpg" alt="">
-            <img src="	https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2021/06/09/2592367.jpg" alt="">
-            <img src="	https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2021/06/09/2592367.jpg" alt="">
-            <img src="	https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2021/06/09/2592367.jpg" alt="">
+    <main class="col-12 colmd-11 col-xl-8 bg-success post-detail">
+      <div class="card">
+          <img src="./assets/images/Graph.webp" class="card-img-top" alt="...">
+          <div class="link-dev d-flex flex-row px-5">
+              <div class="flex position-relative image-title">
+                  <a href="https://dev.to/devteam">
+                      <img class="image-dev" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Vce2LydN--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png" class="radius-default align-middle" width="40" height="40" alt="The DEV Team p>" alt="">
+                  </a>
+              </div>
+              <div class="profile-name">
+                  <a href="https://dev.to/ben" class="name-profile fw-bold">Ben Halpern</a>
+                  <span class="for">for</span>
+                  <a href="https://dev.to/devteam" class="team-dev">The DEV Team</a>
+              </div>
           </div>
-        </div>
+          <div class="card-title text-styles">
+              <h1>People rarely use complicated git commands on the weekend, and I have the data to prove it.</h1>
+              <a href="https://dev.to/t/git" class="git-tag ">#git</a>
+          </div>
+          <div class="card-text">
+              <p>Preamble: We've been running an experimental project to catalog good evergreen guides on DEV. Some initial work
+              <a href="https://dev.to/guides">is available here</a>
+              if you're curious. It's a low-key experiment so don't read too much into what's currently there. But that's an aside to the topic of this post.</p>
+              <p>In tracking the project, I've been keeping an eye on traffic coming to these guides based on how we organize things — and by starting with CSS and Git topics, I noticed something pretty stark: <b>Weekend git traffic falls off wayyyyy more than CSS.</b></p>
+              <p>CSS traffic falls by about 40-50% on weekends. <b>Git search traffic falls by about 80%. :cabeza_explotando:</b></p>
+              <p>This isn't exactly surprising — it's just interesting to see. On the weekend, work is most likely to be solo — and use of git, if at all, is most likely in a pretty straightforward way with minimal branching.</p>
+              <p>Remember, this is not overall development, it is git relative to another pretty ubiquitous tool. I think it's unlikely people who have git as part of their flow at all don't use it on their weekend projects — but I expect that they are way more likely to stay within their comfort zone and routine, and do not have to look up git commands nearly as often as in a collaborative work environment.</p>
+          </div>
+          <div class="card mb-nutria">
+              <img src="./assets/images/morza.jpg" class="card-img-top" alt="nutria-image">
+              <div class="card-body">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--sn4XzJyl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pbs.twimg.com/profile_images/839643754126417920/6trsFcTQ_normal.jpg" alt="The Practical Dev profile image">
+                <div class="twitter-access">
+                  The Practical Dev
+                </div>
+                <div class="twitter-dev">
+                  <a href="https://dev.to/thepracticaldev">
+                      @thepracticaldev</a>
+                </div>
+                <div class="twitter-logo">
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ir1kO05j--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev.to/assets/twitter-f95605061196010f91e64806688390eb1a4dbc9e913682e043eb8b1e06ca484f.svg" alt="Twitter-log">
+                </div>
+                <div class="twitter-actions">
+                  <a href="https://tiwitter.com/intent/twet?in reply to=762709515133485056">
+                      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--fFnoeFxk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev.to/assets/twitter-reply-action-238fe0a37991706a6880ed13941c3efd6b371e4aefe288fe8e0db85250708bc4.svg" alt="coment">
+                  </a>
+                  <a href="https://twitter.com/intent/retweet?tweet_id=762709515133485056">
+                      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--k6dcrOn8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev.to/assets/twitter-retweet-action-632c83532a4e7de573c5c08dbb090ee18b348b13e2793175fea914827bc42046.svg" alt="">
+                  </a>
+                  <a href="https://twitter.com/intent/like?tweet_id=762709515133485056">
+                      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--SRQc9lOp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev.to/assets/twitter-like-action-1ea89f4b87c7d37465b0eb78d51fcb7fe6c03a089805d7ea014ba71365be5171.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          <div class="card-happy">
+              <strong>
+              Happy branching :corazón:
+              </strong>
+            </div>
       </div>
     </main>
-    <aside>
-      <div class="container">
-        <div class="row">
-          <div class="col">
+    <div id="right-aside">
+      
+            <div class="card-container">
+              <div class="card-top">
+                <div id="blue-header"></div>
+                <img src="./assets/images/profilepic.jpg" alt="" id="profile-pic">
+                <header>Chris Bongers</header>
+                <div id="button-container">
+                <button type="button" id="follow-button">Follow</button>
+                </div>
+                <div class="profile-description">
+                  <span>Looking to get into development? As a full-stack developer I guide you on this journey and give you bite sized tips every single day 👊</span>
+
+                </div>
+                <div>
+                  <ul id="card-top-list">
+                    <li><h3>LOCATION</h3> <span>Cape Town, South Africa</span></li>
+                    <li><h3>WORK</h3> <span>Solution Architect at Daily Dev Tips</span></li>
+                    <li><h3>JOINED</h3> <span>20 abr 2020</span></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="card-bottom">
+                <header>More from <a href="">Chris Bongers</a></header>
+                <div>
+                  <div>
+                    
+                    <a href="gato" id="bottom-card-item">
+                    <div> 
+                      CSS Logos: GitHub logo
+                    </div>
+                    <div> 
+                      <span>#CSS</span> <span>#beginners</span><span>#webdev</span>
+                    </div>
+                    
+                    </a>
+
+                    <a href="gato" id="bottom-card-item">
+                      <div> 
+                        CSS Logos: Instagram logo
+                      </div>
+                      <div> 
+                        <span>#CSS</span> <span>#beginners</span><span>#webdev</span>
+                      </div>
+                      
+                      </a>
+
+                      <a href="gato" id="bottom-card-item">
+                        <div>
+                          CSS Logos: dayli dev Logo logo
+                        </div>
+                        <div> 
+                          <span>#CSS</span> <span>#beginners</span><span>#webdev</span>
+                        
+                        </div>
+                        </a>
+
+                </div>
+
+              </div>
+
+            </div>
+    
+ 
           </div>
-        </div>
-      </div>
-    </aside>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   </body>
